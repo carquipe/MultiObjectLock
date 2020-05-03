@@ -41,8 +41,7 @@ class ThreadPoolSample
 }  
 
 class ExecutionObject {
-    internal Entity syncObject1;
-    internal Entity syncObject2;
+    internal Entity syncObject1, syncObject2;
     public ExecutionObject(Entity creditor, Entity customer) {
         this.syncObject1 = creditor;
         this.syncObject2 = customer;
@@ -53,9 +52,6 @@ class ExecutionObject {
         Entity comparedSecond;
         
         // IMPORTANT: To avoid Deadlock, must stablish same lock order.
-        if( syncObject1 == null || syncObject2 == null){
-            Console.WriteLine("One is null");
-        }
         if(syncObject1.CompareTo(syncObject2) >= 1){
             comparedFirst = syncObject1;
             comparedSecond = syncObject2;
@@ -65,11 +61,9 @@ class ExecutionObject {
         }
 
         lock(comparedFirst) lock(comparedSecond){
-            TrackLock(syncObject1);
-            TrackLock(syncObject2);
+            TrackLock(syncObject1); TrackLock(syncObject2);
             Thread.Sleep(rnd.Next(maxWorkSeconds)); // Doing Some Work
-            TrackUnlock(syncObject1);
-            TrackUnlock(syncObject2);
+            TrackUnlock(syncObject1); TrackUnlock(syncObject2);
        }
     }
     private void TrackUnlock(Entity entity){
@@ -84,10 +78,7 @@ class Entity : IComparable{
     readonly internal int id;
     public Entity(int id) => this.id = id;
 
-    public override string ToString(){
-        return id.ToString();
-    }
-
+    public override string ToString() =>  id.ToString();
     public int CompareTo(object obj){
         if(obj == null) return 1;
         Entity comparated = obj as Entity;

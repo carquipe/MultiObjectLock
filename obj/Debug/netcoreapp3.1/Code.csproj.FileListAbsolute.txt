@@ -1,0 +1,13 @@
+D:\Code\MultipleObjectSync\bin\Debug\netcoreapp3.1\Code.exe
+D:\Code\MultipleObjectSync\bin\Debug\netcoreapp3.1\Code.deps.json
+D:\Code\MultipleObjectSync\bin\Debug\netcoreapp3.1\Code.runtimeconfig.json
+D:\Code\MultipleObjectSync\bin\Debug\netcoreapp3.1\Code.runtimeconfig.dev.json
+D:\Code\MultipleObjectSync\bin\Debug\netcoreapp3.1\Code.dll
+D:\Code\MultipleObjectSync\bin\Debug\netcoreapp3.1\Code.pdb
+D:\Code\MultipleObjectSync\obj\Debug\netcoreapp3.1\Code.csprojAssemblyReference.cache
+D:\Code\MultipleObjectSync\obj\Debug\netcoreapp3.1\Code.csproj.CoreCompileInputs.cache
+D:\Code\MultipleObjectSync\obj\Debug\netcoreapp3.1\Code.AssemblyInfoInputs.cache
+D:\Code\MultipleObjectSync\obj\Debug\netcoreapp3.1\Code.AssemblyInfo.cs
+D:\Code\MultipleObjectSync\obj\Debug\netcoreapp3.1\Code.dll
+D:\Code\MultipleObjectSync\obj\Debug\netcoreapp3.1\Code.pdb
+D:\Code\MultipleObjectSync\obj\Debug\netcoreapp3.1\Code.genruntimeconfig.cache
